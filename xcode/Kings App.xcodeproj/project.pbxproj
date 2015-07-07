@@ -16,6 +16,12 @@
 		AB27389319903D0A0054C5AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB27389119903D0A0054C5AB /* Main.storyboard */; };
 		AB27389519903D0A0054C5AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB27389419903D0A0054C5AB /* Images.xcassets */; };
 		AB2738A119903D0B0054C5AB /* Kings_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2738A019903D0B0054C5AB /* Kings_AppTests.swift */; };
+		ABB9A2FB1993F95B00F68880 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB9A2FA1993F95B00F68880 /* SWRevealViewController.m */; };
+		ABB9A2FE1993F9F700F68880 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB9A2FD1993F9F700F68880 /* SidebarViewController.m */; };
+		ABB9A3021993FAAE00F68880 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB9A3011993FAAE00F68880 /* MainViewController.m */; };
+		ABB9A3051994002D00F68880 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB9A3031994002D00F68880 /* menu.png */; };
+		ABB9A3061994002D00F68880 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB9A3041994002D00F68880 /* menu@2x.png */; };
+		ABB9A308199437FA00F68880 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB9A307199437FA00F68880 /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,15 @@
 		AB27389F19903D0B0054C5AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB2738A019903D0B0054C5AB /* Kings_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kings_AppTests.swift; sourceTree = "<group>"; };
 		AB2738AA19903DB70054C5AB /* Kings App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kings App-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABB9A2F91993F95B00F68880 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		ABB9A2FA1993F95B00F68880 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		ABB9A2FC1993F9F700F68880 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
+		ABB9A2FD1993F9F700F68880 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
+		ABB9A3001993FAAE00F68880 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		ABB9A3011993FAAE00F68880 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		ABB9A3031994002D00F68880 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		ABB9A3041994002D00F68880 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		ABB9A307199437FA00F68880 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +101,8 @@
 		AB27388A19903D0A0054C5AB /* Kings App */ = {
 			isa = PBXGroup;
 			children = (
+				ABB9A307199437FA00F68880 /* MainStoryboard.storyboard */,
+				ABB9A2FF1993F9FF00F68880 /* Sidebar */,
 				AB27388D19903D0A0054C5AB /* AppDelegate.swift */,
 				AB27388F19903D0A0054C5AB /* ViewController.swift */,
 				AB27389119903D0A0054C5AB /* Main.storyboard */,
@@ -96,6 +113,7 @@
 				AB27389419903D0A0054C5AB /* Images.xcassets */,
 				AB27388B19903D0A0054C5AB /* Supporting Files */,
 				AB2738AA19903DB70054C5AB /* Kings App-Bridging-Header.h */,
+				ABB9A2F81993F94D00F68880 /* Library */,
 			);
 			path = "Kings App";
 			sourceTree = "<group>";
@@ -103,6 +121,8 @@
 		AB27388B19903D0A0054C5AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ABB9A3031994002D00F68880 /* menu.png */,
+				ABB9A3041994002D00F68880 /* menu@2x.png */,
 				AB07A3591991814B0093EF49 /* splash_01@R4.png */,
 				AB07A357199180860093EF49 /* splash_01@2x.png */,
 				AB27388C19903D0A0054C5AB /* Info.plist */,
@@ -125,6 +145,26 @@
 				AB27389F19903D0B0054C5AB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABB9A2F81993F94D00F68880 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				ABB9A2F91993F95B00F68880 /* SWRevealViewController.h */,
+				ABB9A2FA1993F95B00F68880 /* SWRevealViewController.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		ABB9A2FF1993F9FF00F68880 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				ABB9A3001993FAAE00F68880 /* MainViewController.h */,
+				ABB9A3011993FAAE00F68880 /* MainViewController.m */,
+				ABB9A2FC1993F9F700F68880 /* SidebarViewController.h */,
+				ABB9A2FD1993F9F700F68880 /* SidebarViewController.m */,
+			);
+			name = Sidebar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB07A35A1991814B0093EF49 /* splash_01@R4.png in Resources */,
+				ABB9A3061994002D00F68880 /* menu@2x.png in Resources */,
+				ABB9A3051994002D00F68880 /* menu.png in Resources */,
+				ABB9A308199437FA00F68880 /* MainStoryboard.storyboard in Resources */,
 				AB27389319903D0A0054C5AB /* Main.storyboard in Resources */,
 				AB07A358199180860093EF49 /* splash_01@2x.png in Resources */,
 				AB27389519903D0A0054C5AB /* Images.xcassets in Resources */,
@@ -230,6 +273,9 @@
 			files = (
 				AB27389019903D0A0054C5AB /* ViewController.swift in Sources */,
 				AB07A3601992EA5E0093EF49 /* ToDoListTableViewController.m in Sources */,
+				ABB9A2FB1993F95B00F68880 /* SWRevealViewController.m in Sources */,
+				ABB9A2FE1993F9F700F68880 /* SidebarViewController.m in Sources */,
+				ABB9A3021993FAAE00F68880 /* MainViewController.m in Sources */,
 				AB27388E19903D0A0054C5AB /* AppDelegate.swift in Sources */,
 				AB07A35D1992DC5D0093EF49 /* AddToDoItemViewController.m in Sources */,
 			);

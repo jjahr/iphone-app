@@ -17,9 +17,29 @@
     NSLog(@"unwindToList");
 }
 
+- (IBAction)MenuButton:(id)sender {
+    NSLog(@"Button clicked");
+
+//    SomeScript* myScript = [[SomeScript alloc] init]; //First, we create an instance of SomeScript
+//    [myScript loggedIn]; //Next, we send the loggedIn message to our new instance
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    // Change button color
+    //_sidebarButton.tintColor = [UIColor colorWithWhite:0.96f alpha:0.2f];
+    
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    NSLog(@"ToDoListTableViewController viewDidLoad: setting sidebarButton...");
+//    _sidebarButton.target = self.revealViewController;
+//    _sidebarButton.action = @selector(revealToggle:);
+    
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
